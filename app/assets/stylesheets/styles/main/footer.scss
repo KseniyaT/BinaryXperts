@@ -1,0 +1,46 @@
+@import "compass";
+@import "colors";
+
+.h1-extra {
+  color: $yellow;
+  text-transform: none;
+}
+.footer-inner {
+  padding: 20px 0 35px;
+}
+.footer-address {
+  width: 250px;
+}
+.contacts-container {
+  overflow: hidden;
+}
+.contact-info {
+  float: left;
+  width: 250px;
+}
+.contact-row {
+  @include transition(all, 0.3s, ease);
+  display: block;
+  color: #FFF;
+  font-style: normal;
+  text-decoration: none;
+  margin: 0 0 5px;
+  &:hover,
+  &:active,
+  &:focus {
+    .contact-value {
+      color: $red;
+    }
+  }
+}
+.contact-title {
+  font-weight: bold;
+}
+.footer-form {
+  background-color: $light-blue;
+  padding: 10px;
+}
+.contact-form {
+  margin-left: 345px;
+  overflow: hidden;
+}

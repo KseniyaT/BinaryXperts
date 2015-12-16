@@ -1,0 +1,22 @@
+doctype html
+html
+head
+  title BinaryXperts
+  = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+  /[if lte IE 10]
+    = stylesheet_link_tag "styles/ie_styles/ie.css", :media => "all"
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+
+  meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+  meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+body
+  noscript
+    .alert.alert-error How do you survive without javascript? O_o
+  header#header
+    = render partial:'layouts/header'
+  = yield
+  footer#footer
+    = render partial:'layouts/footer'
+    

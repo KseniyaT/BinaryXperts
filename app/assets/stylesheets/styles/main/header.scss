@@ -1,0 +1,25 @@
+@import "compass";
+@import "colors";
+
+.navbar-header {
+  display: table;
+  table-layout: fixed;
+  font-size: 25px;
+  padding: 65px 0 45px;
+  > li {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1;
+  }
+}
+.navbar-header-logo {
+  width: 275px;
+}
+.logo {
+  display: block;
+  width: 195px;
+  height: 72px;
+  img {
+    width: 100%;
+  }
+}
